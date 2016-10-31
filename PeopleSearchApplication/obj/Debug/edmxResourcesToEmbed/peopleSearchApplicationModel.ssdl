@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="peopleSearchApplicationDatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="peopleSearchApplicationTable">
+    <Key>
+      <PropertyRef Name="personID" />
+    </Key>
+    <Property Name="firstName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="lastName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="address" Type="varchar" MaxLength="500" />
+    <Property Name="DOB" Type="date" Nullable="false" />
+    <Property Name="interests" Type="varchar" MaxLength="500" />
+    <Property Name="personID" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="peopleSearchApplicationDatabaseModelStoreContainer">
+    <EntitySet Name="peopleSearchApplicationTable" EntityType="Self.peopleSearchApplicationTable" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

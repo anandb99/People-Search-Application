@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="peopleSearchApplicationDatabaseModelStoreContainer" CdmEntityContainer="peopleSearchApplicationDatabaseEntities">
+    <EntitySetMapping Name="peopleSearchApplicationTables">
+      <EntityTypeMapping TypeName="peopleSearchApplicationDatabaseModel.peopleSearchApplicationTable">
+        <MappingFragment StoreEntitySet="peopleSearchApplicationTable">
+          <ScalarProperty Name="firstName" ColumnName="firstName" />
+          <ScalarProperty Name="lastName" ColumnName="lastName" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="interests" ColumnName="interests" />
+          <ScalarProperty Name="personID" ColumnName="personID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
